@@ -5,7 +5,6 @@ from random import randint
 from random import uniform
 from time import strftime
 import os
-import datetime
 
 outputBase = input("Where do you want the log file to go?")
 
