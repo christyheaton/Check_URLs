@@ -29,8 +29,6 @@ col=2874
 #Setting up url components
 protocol_s = "https://"
 protocol = "http://"
-
-#Apache
 loadbalancer = "123.12.1234.3"
 ips = ("12.345.6.78", "23.456.78.9")
 services = ("myFirstService, mySecondService")
@@ -40,7 +38,7 @@ tiles = ("myFirstTile, mySecondTile")
 request = input("What type of request are you troubleshooting (s for service, t for tile, or b for both)?")
 request = request.lower()
 
-#Setup parameter to bypass certficate
+#Setup parameters to bypass certficate (don't do in production)
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
